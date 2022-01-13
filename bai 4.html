@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<script>
+    let sum = 0;
+    let num = 500;
+
+
+    for (let i = 2; i < num; i++) {
+        let isPrime = true;
+
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                isPrime = false;
+            }
+        }
+
+        if (isPrime) {
+            sum += i;
+        }
+    }
+
+    console.log(sum);
+</script>
+</body>
+</html>
